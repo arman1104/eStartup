@@ -1,0 +1,217 @@
+.hero-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.hero-container h1 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  color: #71c55d;
+}
+.hero-container span {
+  color: rgb(184, 83, 46);
+}
+
+.hero-container span {
+  font-size: 3.2rem;
+}
+.hero-container p {
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+.btn-conatainer {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+}
+.btn-conatainer button {
+  padding: 0.8rem 3rem;
+  border-radius: 2rem;
+  border: none;
+  cursor: pointer;
+  background-color: #71c55d;
+  /* background-color: #6c63ff; */
+}
+
+.btn-conatainer button {
+  transition: transform 0.1s ease;
+}
+
+.btn-conatainer button:active {
+  transform: scale(0.9);
+}
+
+.play-btn-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.play-btn-container span {
+  font-size: 1rem;
+  color: #71c55d;
+  cursor: pointer;
+}
+
+.play-btn-container .icon {
+  color: #71c55d;
+  cursor: pointer;
+  transition: transform 0.1s ease;
+}
+
+.play-btn-container .icon:active {
+  transform: scale(0.8);
+}
+.image-container img {
+  width: 100%;
+  height: auto;
+  /* border: 1px solid rgba(64, 64, 64, 0.8); */
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 2rem;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 1rem;
+  margin-bottom: 3.5rem;
+}
+
+.card-container :hover {
+  background-color: #71c55d;
+  transition: background-color 1s ease;
+  cursor: pointer;
+}
+
+.card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 3rem;
+  gap: 1rem;
+  border: 1px solid rgba(64, 64, 64, 0.8);
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.card p {
+  font-size: 1rem;
+  width: 90%;
+}
+
+/* Responsive Design for Mobile (370px–720px) */
+@media (min-width: 370px) and (max-width: 720px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-container h1 {
+    font-size: 1.6rem;
+    /* text-align: start; */
+  }
+
+  .image-container img {
+    width: 90%;
+    margin: 1rem auto;
+  }
+
+  .text-btn-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    max-width: 90%;
+    margin: 0;
+  }
+
+  .text-btn-container p {
+    text-align: start;
+  }
+
+  .btn-conatainer {
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+
+  .btn-conatainer button {
+    padding: 0.7rem 2.6rem;
+    align-items: center;
+  }
+  .play-btn-container span {
+    font-size: 0.8rem;
+  }
+
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .card {
+    flex: 1, 1 100%;
+    min-width: 350px;
+    gap: 0.9rem;
+  }
+  .card p {
+    font-size: 1rem;
+  }
+}
+
+/* Responsive Design for Tablets (720px–990px) */
+@media (min-width: 721px) and (max-width: 990px) {
+  .hero-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero-container h1 {
+    font-size: 2.4rem;
+  }
+
+  .image-container {
+    display: flex;
+  }
+  .image-container img {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .text-btn-container {
+    /* max-width: 70%; */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+  }
+
+  .btn-conatainer {
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  .card {
+    flex: 1 1 50%;
+    max-width: 40%;
+    padding: 3rem 2.5rem;
+    box-sizing: border-box;
+  }
+}
