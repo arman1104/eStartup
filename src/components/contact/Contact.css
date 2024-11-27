@@ -31,7 +31,7 @@
   justify-content: space-between;
   align-items: center;
   max-width: 90%;
-  margin-top: 5rem;
+  margin-top: 0;
 }
 
 .contacts-list ul {
@@ -112,21 +112,29 @@
 @media (min-width: 370px) and (max-width: 720px) {
   .contacts-main-container {
     flex-direction: column;
-    align-items: start;
+    /* align-items: start; */
+    align-items: center;
   }
 
   .input-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-top: 1.5rem;
   }
   .name-email-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
+  }
+  .name-email-container input {
+    width: 350px;
   }
 }
 
 /* Responsive Design for tab */
 @media (min-width: 720px) and (max-width: 990px) {
-  .contacts-main-container {
+  .co .contacts-main-container {
     flex-direction: column;
     align-items: start;
   }

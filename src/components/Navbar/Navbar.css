@@ -116,8 +116,11 @@ ul {
   .ham-menu {
     display: block;
     font-size: 1.8rem;
-    margin-right: 2rem;
+    margin-right: 1.2rem;
     cursor: pointer;
+  }
+  .h2-logo {
+    margin-left: 1rem;
   }
 
   .nav-links {
@@ -172,6 +175,9 @@ ul {
     display: none;
   }
 
+  .h2-logo {
+    margin-left: 3rem;
+  }
   .nav-links {
     display: flex;
     gap: 1rem;

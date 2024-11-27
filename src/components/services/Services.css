@@ -70,26 +70,35 @@
 }
 
 /* Responsive design for Mobile */
-@media (min-width: 370px) and (max-width: 720) {
+@media (min-width: 370px) and (max-width: 720px) {
   .service-card {
     justify-content: center;
     gap: 1rem;
   }
   .cards {
     flex: 1 1 100%;
-    padding: 1rem 3rem;
+    padding: 2rem 2.5rem;
+  }
+  .cards h3 {
+    font-size: 1.2rem;
+  }
+  .cards p {
+    font-size: 0.6rem;
+  }
+  .icon-container {
+    padding: 0.4rem 0.6rem;
   }
 }
 
 /* Responsive for tab */
-/* @media (min-width: 720px) and (max-width: 990) {
+@media (min-width: 720px) and (max-width: 990px) {
   .service-card {
     justify-content: center;
     gap: 1rem;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
   }
   .cards {
-    flex: 1 1 70%;
-    padding: 1rem 3rem;
+    flex: 1 1 40%;
+    padding: 2.5rem 2.5rem;
   }
-} */
+}
