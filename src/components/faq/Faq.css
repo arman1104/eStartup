@@ -35,7 +35,8 @@
 .faq-item p {
   margin-top: 0.5rem;
   color: #c6b1b1;
-  font-size: 0.95rem;
+  font-size: 1rem;
+  font-weight: 500;
 }
 
 /* Responsive style */
