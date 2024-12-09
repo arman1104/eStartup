@@ -112,6 +112,7 @@
 @media (min-width: 370px) and (max-width: 720px) {
   .hero-container {
     flex-direction: column;
+    flex-direction: column-reverse;
     text-align: center;
   }
 
@@ -172,6 +173,7 @@
 @media (min-width: 721px) and (max-width: 990px) {
   .hero-container {
     flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
   }
   .hero-container h1 {
